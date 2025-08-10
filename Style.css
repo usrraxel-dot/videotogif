@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 60px;
+  margin: 0 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#gifResult {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+#downloadLink {
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
