@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video to GIF Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Video to GIF Maker</h1>
+  <input type="file" id="videoUploader" accept="video/*" />
+  <br />
+  <video id="video" controls style="max-width: 100%; margin-top: 10px;"></video>
+  <br />
+  <label>Start time (seconds): <input type="number" id="startTime" min="0" value="0" /></label>
+  <label>End time (seconds): <input type="number" id="endTime" min="1" value="5" /></label>
+  <br />
+  <button id="makeGif">Create GIF</button>
+  <br />
+  <canvas id="canvas" style="display:none;"></canvas>
+  <br />
+  <h2>Resulting GIF:</h2>
+  <img id="gifResult" alt="Your GIF will appear here" />
+  <br />
+  <a id="downloadLink" style="display:none;">Download GIF</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
